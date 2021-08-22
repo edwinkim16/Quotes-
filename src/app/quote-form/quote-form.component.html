@@ -24,7 +24,7 @@
             </div>
   
         </div>
-        <div class="form-group">
+        <div class="form-group" id="author1">
             <label for="author">Author</label>
             <input type='text' id="author" [(ngModel)]="newQuote.author" 
             name="author" #author="ngModel"  required>
@@ -33,7 +33,7 @@
             </div>
   
         </div>
-        <div class="form-group">
+        <div class="form-group" id="complete1">
             <label for="complete">Completion</label>
             <input type='date' id="complete"  [(ngModel)]="newQuote.completeDate" name="completeDate" 
             #completeDate="ngModel" required>
@@ -42,6 +42,6 @@
               </div>
   
         </div>
-        <button type="submit" class="btn btn-primary">Add Quote</button>
+        <button type="submit" class="btn btn-primary" id="addition">Add Quote</button>
     </form>
   </div>

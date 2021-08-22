@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color:#C4C4C4;
+}
+ form{
+     padding: 2%;
+     text-align: center;
+     font-size: larger;
+     font-weight: bold;
+ }
+ #description1{
+    margin-top: 2%;
+ }
+ #author1{
+     margin-top: 3%;
+ }
+ #complete1{
+    margin-top: 3%;
+ }
+ #addition{
+     margin-top: 3%;
+ }
+ ul{
+     list-style: none;
+ }
