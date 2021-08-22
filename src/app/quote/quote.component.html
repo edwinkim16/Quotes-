@@ -8,11 +8,12 @@
           
         </li>
         <button (click)='toggleDetails(i)' class="btn btn-success">More</button>
-        <app-quote-detail *ngIf='quotes.showDescription' [quote]="quotes" (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+        <app-quote-detail *ngIf='quotes.showDescription' [quote]="quotes" (isComplete) = 'deleteQuote($event,i)'
+        (isPlus)='quotePlus($event,i)' (isMinus)='quoteMinus($event,i)'></app-quote-detail>
     </ul> 
       
     <br>
-    <app-quote-form (addQuote)="addNewQuotes($event)" 
-   ></app-quote-form>
+     <app-quote-form (addQuote)="addNewQuotes($event)" 
+   ></app-quote-form> 
     <p></p>
 </div>
