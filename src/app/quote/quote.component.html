@@ -1,10 +1,13 @@
 <div class="container">
     <h1>My Qouotes</h1>
     <hr>
-    <ul>
-        <li *ngFor='let quotes of quotes'>
-          {{quotes.name}}
+    <ul *ngFor='let quotes of quotes'>
+        
+        <li >
+          {{quotes.name}} <br>
+          {{quotes.description}}
         </li>
-      </ul>
+        <app-quote-detail [quote]="quotes"></app-quote-detail>
+    </ul>
     <p></p>
 </div>
