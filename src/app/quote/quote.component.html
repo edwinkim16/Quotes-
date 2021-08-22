@@ -4,11 +4,11 @@
     
     <ul *ngFor='let quotes of quotes;let i=index'>
         <li >
-          {{quotes.name}} <br>
+          {{quotes.name}} due on {{quotes.completeDate|date|uppercase}} <br>
           
         </li>
         <button (click)='toggleDetails(i)'>More</button>
-        <app-quote-detail *ngIf='quotes.showDescription'  [quote]="quotes"></app-quote-detail>
+        <app-quote-detail *ngIf='quotes.showDescription' [quote]="quotes" (isComplete) = 'completeGoal($event,i)'></app-quote-detail>
         <div>
     
     <p></p>
