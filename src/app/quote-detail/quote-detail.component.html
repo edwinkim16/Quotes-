@@ -5,7 +5,14 @@
 </p>
 <p>This goal will be complete in {{quote.completeDate|dateCount}} days</p>
 
-<i class="fas fa-heart" (click)='quotePlus(true)' id="up">{{quote.upVote}}</i> 
-<i class="fas fa-thumbs-down" (click)='quoteMinus(true)' id="down">{{quote.downVote}}</i> 
+
+<!-- <i class="fas fa-heart" (click)='quotePlus(true)' id="up">{{quote.upVote}}</i> 
+<i class="fas fa-thumbs-down" (click)='quoteMinus(true)' id="down">{{quote.downVote}}</i>  -->
 <br>
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+<br>
+<div class="vote">
+    <i class="fa fa-heart" id="up">{{quote.upVote}}</i>
+    <i class="fa fa-thumbs-down" id="down">{{quote.downVote}}</i>
+</div>
+
