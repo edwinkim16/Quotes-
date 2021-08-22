@@ -12,7 +12,7 @@
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
 <br>
 <div class="vote">
-    <i class="fa fa-heart" id="up">{{quote.upVote}}</i>
-    <i class="fa fa-thumbs-down" id="down">{{quote.downVote}}</i>
+    <i class="fa fa-heart" id="up" (click)="quotePlus(true)">{{quote.upVote}}</i>
+    <i class="fa fa-thumbs-down" id="down" (click)='quoteMinus(true)'>{{quote.downVote}}</i>
 </div>
 

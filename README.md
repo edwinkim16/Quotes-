@@ -2,6 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
+## Description
+This is a quotes web app.You can be able to see quotes and add your quotes.You can also delete quotes.
+## Setup/Installation Requirements
+* clone the following repo https://github.com/edwinkim16/Quotes-
+* use your desired folder on your machine and clone
+the repo there
+* Open your project on live server(see development server)
+
+## Known Bugs
+ As per now there are no known bugs.If you experience any you can reach via email edwinkimathi226@gmail.com
+## Technologies Used
+I used CSS,HTML,Angular Js and Typescript.
+## Support and contact details
+Incase of any queries you can reach me through email edwinkimathi226@gmail.com
+### License
+This Project comes wit MIT License. View it <a href="https://github.com/edwinkim16/Edwin-s-Pizza-/blob/gh-pages/License"> MIT</a>
+ Edwin Kimathi
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
