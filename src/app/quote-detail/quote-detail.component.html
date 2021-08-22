@@ -3,11 +3,10 @@
     <style> </style>
     written by {{quote.author}}
 </p>
-<p>This goal will be complete in {{quote.completeDate|dateCount}} days</p>
+<p>This quote was posted {{quote.completeDate|dateCount}} days ago</p>
 
 
-<!-- <i class="fas fa-heart" (click)='quotePlus(true)' id="up">{{quote.upVote}}</i> 
-<i class="fas fa-thumbs-down" (click)='quoteMinus(true)' id="down">{{quote.downVote}}</i>  -->
+
 <br>
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
 <br>
