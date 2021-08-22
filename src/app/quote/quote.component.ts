@@ -8,10 +8,14 @@ import { Quotes } from '../quotes';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quotes[]=[
-    {name:"Hello World", description:"this is my first program",author:"Edwin"},
-    {name:"Define world", description:"We have 171 countries",author:"Grusha"},
-    {name:"Caucasian", description:"This is a novel",author:"Azdak"}
+    new Quotes("Hello world","This is my first program","Edwin"),
+    new Quotes("Chalk circle","You who have listened to story of chalk circle","Bertolt Brecht"),
+    new Quotes("Define world","We have 195 countries","Wikipedia"),
   ];
+
+  toggleDetails(index:any){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
  
   constructor() { }
 
