@@ -13,6 +13,13 @@ export class QuoteComponent implements OnInit {
     new Quotes("Define world","We have 195 countries","Wikipedia",new Date(2021,1,8)),
   ];
 
+  addNewQuotes(goal:any){
+    let goalLength = this.quotes.length;
+    goal.id = goalLength+1;
+    goal.completeDate = new Date(goal.completeDate)
+    this.quotes.push(goal)
+  }
+
   toggleDetails(index:any){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
