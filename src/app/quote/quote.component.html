@@ -8,7 +8,7 @@
           
         </li>
         <button (click)='toggleDetails(i)'>More</button>
-        <app-quote-detail *ngIf='quotes.showDescription' [quote]="quotes" (isComplete) = 'completeGoal($event,i)'></app-quote-detail>
+        <app-quote-detail *ngIf='quotes.showDescription' [quote]="quotes" (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
         <div>
     
     <p></p>
