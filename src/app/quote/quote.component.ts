@@ -38,6 +38,17 @@ export class QuoteComponent implements OnInit {
       }
     }
   }
+  quotePlus(isPlus:any,index:any){
+    if(isPlus){
+      this.quotes[index].upVote +=1;
+    }
+  }
+
+  quoteMinus(isMinus:any,index:any){
+    if(isMinus){
+      this.quotes[index].downVote +=1;
+    }
+  }
  
   constructor() { }
 
